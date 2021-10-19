@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+
+    <Header>
+
+      <Title>ipr</Title>
+      <Description>Code snippet for creating int variable waiting for user input</Description>
+      <Author>Deyan Dachev</Author>
+      <Shortcut>ipr</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+
+    </Header>
+
+    <Snippet>
+
+      <Declarations>
+        <Literal >
+          <ID>name</ID>
+          <Tooltip>Name of the variable</Tooltip>
+          <Default>name</Default>
+        </Literal>
+      </Declarations>
+
+      <Code Language="CSharp">
+        <![CDATA[int $name$ = int.Parse(Console.ReadLine());
+               $end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
